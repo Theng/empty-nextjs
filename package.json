@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3009",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "start:ec2": "sudo PORT=80 nohup npm run start  </dev/null &>/dev/null &"
   },
   "dependencies": {
     "next": "^11.0.0",
